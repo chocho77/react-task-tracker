@@ -30,6 +30,12 @@ import Tasks from './components/Tasks';
         id));
         }
 
+    // Toggle Reminder
+
+    const toggleReminder = (id) => {
+        console.log(id);
+    }
+
     return (
    <div className="container">
        <Header />
