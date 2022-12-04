@@ -9,7 +9,7 @@ import Tasks from './components/Tasks';
             id: 1,
             text: 'Doctors Appointment',
             day: 'Feb 5th at 2:30 pm',
-            remainder: true,
+            reminder: true,
         },
         {
             id: 2,
@@ -36,7 +36,7 @@ import Tasks from './components/Tasks';
         setTasks(
             tasks.map((task) =>
             task.id === id ? { ...task, reminder:
-            !task.remainder } : task
+            !task.reminder } : task
             )
         )
     }
