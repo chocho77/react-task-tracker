@@ -40,7 +40,7 @@ import Tasks from './components/Tasks';
    <div className="container">
        <Header />
        {tasks.length > 0 ? (<Tasks tasks={tasks} onDelete=
-       {deleteTask} /> ): (
+       {deleteTask} onToggle={toggleReminder} /> ): (
         'No Tasks To Show'
         )}
     </div>       
